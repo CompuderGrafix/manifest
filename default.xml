@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="origin"
+          fetch="git@github.com:CompuderGrafix/"
+		  push="git@github.com:CompuderGrafix/" />
+  <default revision="master"
+           remote="origin"
+           sync-c="true"
+           sync-j="4" />
+
+  <project path="manifest" name="manifest" /> 
+  
+<!-- STUFF TO MAKE THIS FUNCTIONAL -->  
+
+  <!-- this needs to kick of the build of everything, and dump it all in an "out" directory -->  
+  <!-- this copies the Makefile in the build repository out into the repo tree's root, 
+		so calling make from the top of this tree can kick off all of the other projects' build-->
+  <!-- (uncomment once it exists)
+  <project path="build" name="build" >
+    <copyfile src="Makefile" dest="Makefile" />
+  </project>
+  -->
+  
+  <!-- all other projects -->  
+  <!-- (prototype for components once they exist)
+  <project path="cats/pajamas" name="cats_pajamas" />
+  -->
+</manifest>
