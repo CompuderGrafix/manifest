@@ -23,7 +23,9 @@ Common instructions
     repo init -u http://github.com/CLASSORGANIZATIONNAME/manifest -b master
 
 To sync all repositories, you need to...
+
     repo sync -j32
     
 To start a development branch (development branches are automatically rebased on the remote revision tracked by the repo manifest... so if the manifest is set to track "master", then everytime master changes, your development branch's commits will automatically be changed to start at where origin/master is, rather than where it was)
+
     repo start <branch name> <project name>
