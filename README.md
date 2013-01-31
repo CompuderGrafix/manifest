@@ -14,7 +14,7 @@ On linux only
 Common instructions
 -------------------
     mkdir -p ~/bin
-    wget  --no-check-certificate https://dl-ssl.google.com/dl/googlesource/git-repo/repo -o ~/bin/repo
+    wget  --no-check-certificate https://dl-ssl.google.com/dl/googlesource/git-repo/repo -O ~/bin/repo
     chmod a+x ~/bin/repo
     repo init -u http://github.com/CompuderGrafix/manifest -b master
 
