@@ -3,11 +3,12 @@ manifest
 
 On Windows
 ----------
-    you can try these steps in cygwin (with ssh and git-core installed), but I had no luck... TRY NOT ENABLING COLORS when "repo init" asks you about them.
+you can try these steps in cygwin (with ssh and git-core installed), but I had no luck... TRY NOT ENABLING COLORS when "repo init" asks you about them.
     
 On Mac
-    get a real OS, KTHXBAI
-    (this may work on OS X with macports and/or the right deps)
+------
+get a real OS, KTHXBAI
+(this may work on OS X with macports and/or the right deps)
 
 On Linux
 -------------
