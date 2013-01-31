@@ -1,13 +1,15 @@
 manifest
 ========
 
-On windows only
----------------
-In windows, I'd recommend using cygwin and letting repo do the legwork... otherwise, you'll need msysgit (http://code.google.com/p/msysgit/), and putty (http://the.earth.li/~sgtatham/putty/latest/x86/putty-0.62-installer.exe), and you'll have to manually keep all of the repos in sync with origin
-If you're on windows, and not using cygwin, stop reading here. you're on your own
-In cygwin setup, make sure you have git-core, ssh, and python installed.
+On Windows
+----------
+    you can try these steps in cygwin (with ssh and git-core installed), but I had no luck... TRY NOT ENABLING COLORS when "repo init" asks you about them.
+    
+On Mac
+    get a real OS, KTHXBAI
+    (this may work on OS X with macports and/or the right deps)
 
-On linux only
+On Linux
 -------------
     sudo apt-get install git-core ssh
 
@@ -16,6 +18,8 @@ Common instructions
     mkdir -p ~/bin
     wget  --no-check-certificate https://dl-ssl.google.com/dl/googlesource/git-repo/repo -O ~/bin/repo
     chmod a+x ~/bin/repo
+    export PATH=$PATH:~/bin
+    cd <WHERE YOU WANT YOUR CODE TO LIVE>
     repo init -u http://github.com/CompuderGrafix/manifest -b master
 
 To sync all repositories, you need to...
